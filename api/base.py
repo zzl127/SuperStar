@@ -71,8 +71,6 @@ class Chaoxing:
                     "validate": "",
                     "doubleFactorLogin": 0,
                     "independentId": 0,
-                    "user-agent": "Mozilla/5.0 (Linux; Android 5.0; Lenovo A536 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2818.53 Mobile Safari/537.36"
-
                 }
         
         logger.trace("正在尝试登录...")

@@ -62,9 +62,6 @@ class Chaoxing:
         _session = requests.session()
         _session.verify = False
         _url = "https://passport2.chaoxing.com/fanyalogin"
-        _headers = {
-    537.36'
-}
         _data = {"fid": "-1",
                     "uname": self.cipher.encrypt(self.account.username),
                     "password": self.cipher.encrypt(self.account.password),

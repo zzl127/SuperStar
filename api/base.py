@@ -62,6 +62,9 @@ class Chaoxing:
         _session = requests.session()
         _session.verify = False
         _url = "https://passport2.chaoxing.com/fanyalogin"
+        _headers = {
+    537.36'
+}
         _data = {"fid": "-1",
                     "uname": self.cipher.encrypt(self.account.username),
                     "password": self.cipher.encrypt(self.account.password),
@@ -70,8 +73,11 @@ class Chaoxing:
                     "forbidotherlogin": 0,
                     "validate": "",
                     "doubleFactorLogin": 0,
-                    "independentId": 0
+                    "independentId": 0,
+                    "user-agent": "Mozilla/5.0 (Linux; Android 5.0; Lenovo A536 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2818.53 Mobile Safari/537.36"
+
                 }
+        
         logger.trace("正在尝试登录...")
         resp = _session.post(_url, headers=gc.HEADERS, data=_data)
         if resp and resp.json()["status"] == True:

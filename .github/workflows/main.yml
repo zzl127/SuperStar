@@ -2,7 +2,7 @@ name: Test github actions
  
 on: # 什么时候触发
   push:
-    branches: [ main ]
+    branches: [ actions ]
  
 jobs: # 执行的工作
   run_demo_actions:
@@ -21,4 +21,4 @@ jobs: # 执行的工作
           pip install -r ./requirements.txt 
  
       - name: Run main.py
-        run: python main.py -u 学习通账号 -p 学习通密码 -l 244403509 
+        run: python main.py -u 18853530125 -p @Smartxiaoli666 -l 244403509 
